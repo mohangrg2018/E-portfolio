@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,5 +19,9 @@
 
   .nav__link {
     @apply text-sm text-center font-medium hover:bg-primary hover:text-white w-screen p-3;
+  }
+
+  .barCompleted {
+    @apply bg-primary w-[60%];
   }
 }

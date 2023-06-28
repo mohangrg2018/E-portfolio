@@ -12,6 +12,10 @@ module.exports = {
           DEFAULT: "#FFB912",
         },
       },
+      fontFamily: {
+        play: "Playfair Display",
+        rubik: "Rubik",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
