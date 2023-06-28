@@ -6,29 +6,29 @@ const Services = () => {
       <div className="w-[50%] flex flex-col gap-10">
         <div>
           <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <ProgressBar completed={90} completedClassName="barCompleted_1" />
         </div>
         <div>
-          <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <p>CSS</p>
+          <ProgressBar completed={90} completedClassName="barCompleted_2" />
         </div>
         <div>
-          <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <p>JAVASCRIPT</p>
+          <ProgressBar completed={80} completedClassName="barCompleted_3" />
         </div>
       </div>
       <div className="w-[50%] flex flex-col gap-10">
         <div>
-          <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <p>FIGMA</p>
+          <ProgressBar completed={80} completedClassName="barCompleted_4" />
         </div>
         <div>
-          <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <p>REACTJS</p>
+          <ProgressBar completed={80} completedClassName="barCompleted_5" />
         </div>
         <div>
-          <p>HTML</p>
-          <ProgressBar completed="60" completedClassName="barCompleted" />
+          <p>WORDPRESS</p>
+          <ProgressBar completed={90} completedClassName="barCompleted_6" />
         </div>
       </div>
     </div>

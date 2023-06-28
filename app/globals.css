@@ -21,7 +21,31 @@
     @apply text-sm text-center font-medium hover:bg-primary hover:text-white w-screen p-3;
   }
 
-  .barCompleted {
-    @apply bg-primary w-[60%];
+  .barCompleted_1 {
+    @apply bg-primary w-[90%];
+  }
+
+  .barCompleted_2 {
+    @apply bg-primary w-[90%];
+  }
+
+  .barCompleted_3 {
+    @apply bg-primary w-[80%];
+  }
+
+  .barCompleted_4 {
+    @apply bg-primary w-[80%];
+  }
+
+  .barCompleted_5 {
+    @apply bg-primary w-[80%];
+  }
+
+  .barCompleted_6 {
+    @apply bg-primary w-[90%];
+  }
+
+  .container {
+    @apply bg-white;
   }
 }
