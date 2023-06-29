@@ -1,10 +1,11 @@
 import React from "react";
+import Project from "./Project";
 
 const Projects = () => {
   return (
     <div className="lg:max-w-6xl mx-auto mt-36">
       <div>
-        <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-10">
+        <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
           activities
         </h1>
         <p className="uppercase -mt-12 font-bold text-primary">
@@ -20,93 +21,57 @@ const Projects = () => {
         <h2>NextJs Projects</h2>
       </div>
       <div className="flex items-center justify-evenly mt-10">
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
       </div>
 
       <div className="flex items-center justify-evenly mt-10">
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
       </div>
 
       <div className="flex items-center justify-evenly mt-10">
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
-        <div className="portfolio">
-          <img
-            src="portfolio/nightrain.png"
-            alt="Night rain project"
-            className="portfolio__img"
-          />
-          <p className="mt-3">Night Rain Trading & Contracting</p>
-          <p className="text-gray-500">WordPress</p>
-        </div>
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
+        <Project
+          image="portfolio/nightrain.png"
+          projectName="Night Rain Trading & Contracting"
+          tool="WordPress"
+        />
       </div>
     </div>
   );

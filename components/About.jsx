@@ -12,7 +12,7 @@ const About = () => {
           <Lottie animationData={Programmer} loop={true} />
         </div>
         <div className="w-[50%]">
-          <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-10">
+          <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
             Introduction
           </h1>
           <p className="uppercase -mt-12 font-bold text-primary">About me</p>
