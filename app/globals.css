@@ -52,4 +52,8 @@
   .portfolio p {
     @apply font-rubik;
   }
+
+  .active-category {
+    @apply text-primary;
+  }
 }
