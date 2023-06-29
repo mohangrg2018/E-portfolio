@@ -16,9 +16,9 @@ const About = () => {
             Introduction
           </h1>
           <p className="uppercase -mt-12 font-bold text-primary">About me</p>
-          <h2 className="capitalize font-bold text-[42px] font-play">
+          <h2 className="capitalize font-bold text-[42px] font-play mt-2">
             Failure is the condiment that gives
-            <span className="text-primary">Success</span>
+            <span className="text-primary ml-2">Success</span>
           </h2>
           <p className="font-rubik mt-6 border-l-4 border-primary pl-5">
             I have proficiency in HTML, CSS, JAVASCRIPT and frameworks and

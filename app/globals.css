@@ -45,7 +45,11 @@
     @apply bg-primary w-[90%];
   }
 
-  .container {
-    @apply bg-white;
+  .portfolio__img {
+    @apply w-[300px] h-[150px] rounded-xl;
+  }
+
+  .portfolio p {
+    @apply font-rubik;
   }
 }
