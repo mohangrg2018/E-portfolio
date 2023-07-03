@@ -13,6 +13,7 @@ import {
 } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
+import DarkMode from "./DarkMode";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -20,17 +21,25 @@ const Header = () => {
   const toggleMenu = () => {
     setOpen(!open);
   };
+
   return (
     <div>
-      <div className="flex items-center justify-between py-2 lg:max-w-6xl mx-auto px-2">
+      <div className="flex items-center justify-between py-2 lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto px-2">
         <div className="sm:flex items-center gap-4 hidden">
           <div className="flex items-center gap-1">
             <AiOutlinePhone className="contact__icon" />
-            <p className="contact__details">+9779806722179</p>
+            <Link href="tel:9779806722179" className="contact__details">
+              +9779806722179
+            </Link>
           </div>
           <div className="flex items-center gap-1">
             <AiOutlineMail className="contact__icon" />
-            <p className="contact__details">mohangrg2030@gmail.com</p>
+            <Link
+              href="mailto:mohangrg2030@gmail.com"
+              className="contact__details"
+            >
+              mohangrg2030@gmail.com
+            </Link>
           </div>
           <div className="flex items-center gap-1">
             <CiLocationOn className="contact__icon" />
@@ -38,22 +47,23 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center gap-3 text-xl ml-2">
-          <Link href="">
+          <DarkMode />
+          <Link href="https://www.instagram.com/itsmohangurung/">
             <AiOutlineInstagram className="social__icon" />
           </Link>
-          <Link href="">
+          <Link href="https://github.com/mohangrg2018">
             <AiOutlineGithub className="social__icon" />
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/mohan-gurung-742611207/">
             <AiOutlineLinkedin className="social__icon" />
           </Link>
-          <Link href="">
+          <Link href="https://twitter.com/mohangu46803039">
             <AiFillTwitterCircle className="social__icon" />
           </Link>
         </div>
       </div>
       <div className="border-b border-gray-100"></div>
-      <div className="flex items-center justify-between lg:max-w-6xl mx-auto sm:px-2">
+      <div className="flex items-center justify-between lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto sm:px-2">
         <Link href="/">
           <img src="mohan_logo.png" alt="Logo" />
         </Link>
@@ -67,27 +77,21 @@ const Header = () => {
           <Link href="/" className="nav__link">
             Home
           </Link>
-          <Link href="/" className="nav__link">
+          <Link href="#about" className="nav__link">
             About Me
           </Link>
-          <Link href="/" className="nav__link">
-            Services
-          </Link>
-          <Link href="/" className="nav__link">
+          <Link href="#work" className="nav__link">
             Works
           </Link>
-          <Link href="/" className="nav__link">
+          <Link href="#contact" className="nav__link">
             Contact
           </Link>
-          <Link href="/" className="nav__link">
-            Blogs
-          </Link>
-          <button
-            type="button"
+          <Link
+            href="#contact"
             className="hidden sm:inline-block px-4 py-2 border border-primary text-primary ml-5 hover:bg-primary hover:text-white"
           >
             HIRE ME
-          </button>
+          </Link>
         </div>
         {open ? (
           <AiOutlineClose

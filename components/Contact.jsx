@@ -4,9 +4,12 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const Contact = () => {
   return (
-    <div className="lg:max-w-6xl mx-auto mt-36 p-8 bg-gray-200 rounded-lg">
-      <div className="flex items-center">
-        <div className="w-[50%]">
+    <div
+      className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto mt-36 p-8 bg-gray-700 rounded-lg"
+      id="contact"
+    >
+      <div className="sm:flex items-center">
+        <div className="sm:w-[50%] text-white">
           <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
             Contact
           </h1>
@@ -36,22 +39,22 @@ const Contact = () => {
             <p>+977 9806722179</p>
           </Link>
         </div>
-        <div className="w-[50%]">
+        <div className="sm:w-[50%] mt-7">
           <input
             type="text"
             placeholder="Enter Name*"
             className="w-full px-4 py-4 bg-transparent outline-none border-2 border-gray-300 mb-7"
           />
-          <div className="w-full flex items-center gap-2 mb-7">
+          <div className="w-full sm:flex items-center gap-2 mb-7">
             <input
               type="email"
               placeholder="Enter Email*"
-              className="px-3 py-4 bg-transparent outline-none border-2 border-gray-300"
+              className="px-3 py-4 w-full bg-transparent outline-none border-2 border-gray-300"
             />
             <input
               type="tel"
               placeholder="Enter Number*"
-              className="px-4 py-4 bg-transparent outline-none border-2 border-gray-300"
+              className="px-4 py-4 mt-7 sm:mt-0 w-full bg-transparent outline-none border-2 border-gray-300"
             />
           </div>
           <textarea

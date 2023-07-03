@@ -56,4 +56,8 @@
   .active-category {
     @apply text-primary;
   }
+
+  .footer__icon {
+    @apply text-4xl hover:text-primary;
+  }
 }

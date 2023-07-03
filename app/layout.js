@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import Theme from "@/components/Theme";
 
 export const metadata = {
   title: "Mohan Gurung",
@@ -10,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="relative">
-        <Header />
-        {children}
+        <Theme>
+          <Header />
+          {children}
+        </Theme>
       </body>
     </html>
   );

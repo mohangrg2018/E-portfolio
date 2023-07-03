@@ -84,7 +84,7 @@ const Projects = () => {
       : projectsData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="lg:max-w-6xl mx-auto mt-36">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto mt-36" id="work">
       <div>
         <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
           activities
@@ -130,7 +130,7 @@ const Projects = () => {
           Html/Css/Javascript
         </h2>
       </div>
-      <div className="grid grid-cols-3 gap-10 mt-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-10 mt-10">
         {filteredProjects.map((project, index) => (
           <Project
             key={index}

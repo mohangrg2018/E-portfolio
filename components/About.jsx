@@ -6,12 +6,12 @@ import Services from "./Services";
 
 const About = () => {
   return (
-    <div className="lg:max-w-6xl mx-auto">
-      <div className="flex items-center mt-10">
-        <div className="w-[50%]">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto" id="about">
+      <div className="sm:flex items-center mt-10">
+        <div className="sm:w-[50%]">
           <Lottie animationData={Programmer} loop={true} />
         </div>
-        <div className="w-[50%]">
+        <div className="sm:w-[50%]">
           <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
             Introduction
           </h1>
