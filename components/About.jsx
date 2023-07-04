@@ -6,7 +6,7 @@ import Services from "./Services";
 
 const About = () => {
   return (
-    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto" id="about">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto" id="about">
       <div className="sm:flex items-center mt-10">
         <div className="sm:w-[50%]">
           <Lottie animationData={Programmer} loop={true} />

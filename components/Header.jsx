@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-between py-2 lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto px-2">
+      <div className="flex items-center justify-between py-2 lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto px-2">
         <div className="sm:flex items-center gap-4 hidden">
           <div className="flex items-center gap-1">
             <AiOutlinePhone className="contact__icon" />

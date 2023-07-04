@@ -17,7 +17,7 @@ import { BsBook } from "react-icons/bs";
 
 const Education = () => {
   return (
-    <div className="lg:max-w-6xl mx-auto">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto">
       <div className="text-center mt-20">
         <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
           resume

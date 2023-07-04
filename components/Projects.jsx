@@ -84,7 +84,7 @@ const Projects = () => {
       : projectsData.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto mt-36" id="work">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto mt-36" id="work">
       <div>
         <h1 className="text-[45px] uppercase font-extrabold font-rubik opacity-5">
           activities

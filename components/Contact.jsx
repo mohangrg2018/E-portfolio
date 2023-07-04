@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div
-      className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto mt-36 p-8 bg-[#0B0D0C] rounded-lg"
+      className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto mt-36 p-8 bg-[#0B0D0C] rounded-lg"
       id="contact"
     >
       <div className="sm:flex items-center">

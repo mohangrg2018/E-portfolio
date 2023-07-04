@@ -20,7 +20,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto sm:flex items-center">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto sm:flex items-center">
       <div className="sm:w-[60%]">
         <h1 className="sm:text-[70px] text-[52px] font-play font-bold text-primary">
           Hello, I'm Mohan,
