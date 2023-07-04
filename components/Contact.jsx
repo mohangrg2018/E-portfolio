@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,8 +21,9 @@ const Contact = () => {
         "b6jmytI3uYLIoxinJ"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setIsSuccess(true);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
@@ -100,6 +102,9 @@ const Contact = () => {
           >
             Submit message
           </button>
+          {isSuccess && (
+            <p className="text-primary mt-4">Form submitted successfully!</p>
+          )}
         </form>
       </div>
     </div>

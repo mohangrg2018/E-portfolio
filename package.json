@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/lab": "^5.0.0-alpha.134",
     "@mui/material": "^5.13.6",
     "@ramonak/react-progress-bar": "^5.0.3",
     "autoprefixer": "10.4.14",
-    "emailjs-com": "^3.2.0",
     "lottie-react": "^2.4.0",
     "next": "13.4.7",
     "next-themes": "^0.2.1",
