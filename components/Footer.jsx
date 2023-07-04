@@ -27,9 +27,7 @@ const Footer = () => {
         <Link href="/">
           <img src="mohan_logo.png" alt="Logo" />
         </Link>
-        <p className="-ml-8 -mt-5 italic text-lg">
-          Thanks for visiting my portfolio
-        </p>
+        <p className="-mt-5 italic text-lg">Thanks for visiting my portfolio</p>
       </div>
       {/* <div>
         <h2>All</h2>

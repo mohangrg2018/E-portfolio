@@ -3,7 +3,7 @@ import React from "react";
 const CTA = () => {
   return (
     <div className="bg-[#0B0D0C] mt-20">
-      <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto sm:flex items-center justify-between mt-10 py-8">
+      <div className="lg:max-w-6xl sm:max-w-2xl max-w-sm mx-auto sm:flex items-center justify-between mt-10 py-8">
         <div className="sm:text-[42px] text-[32px] text-white capitalize font-extrabold font-play">
           <h2>Let’s Make Something Together </h2>
           <h2>
