@@ -8,7 +8,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="lg:max-w-6xl sm:max-w-2xl max-w-md mx-auto my-20 sm:flex sm:items-center sm:justify-between">
+    <div className="lg:max-w-6xl sm:max-w-2xl max-w-xs mx-auto my-20 sm:flex sm:items-center sm:justify-between">
       <div className="flex items-center gap-4">
         <Link href="https://github.com/mohangrg2018">
           <AiFillGithub className="footer__icon" />
