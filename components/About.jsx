@@ -28,7 +28,7 @@ const About = () => {
             development.
           </p>
           <Link
-            href="https://drive.google.com/file/d/1dmtUy_e4jwgNe2etvkU7Olhh7uL8hVOi/view?usp=sharing"
+            href="https://drive.google.com/file/d/1IKaIw5lsYli2-TKIyVe3FANA2ZTh8TG9/view?usp=sharing"
             type="button"
             className="px-8 py-3 border-2 border-primary text-primary uppercase mt-10 hover:text-white hover:bg-primary"
           >
