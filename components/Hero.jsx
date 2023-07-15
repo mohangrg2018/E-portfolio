@@ -4,18 +4,21 @@ import Typewriter from "typewriter-effect";
 import Lottie from "lottie-react";
 import Coder from "../public/coder.json";
 import { useRef, useState } from "react";
-import { AiFillPlayCircle } from "react-icons/ai";
+import { AiFillPauseCircle, AiFillPlayCircle } from "react-icons/ai";
 
 const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
   const togglePlay = () => {
+    const audio = audioRef.current;
+
     if (isPlaying) {
-      audioRef.current.pause();
+      audio.pause();
     } else {
-      audioRef.current.play();
+      audio.play();
     }
+
     setIsPlaying(!isPlaying);
   };
 
@@ -40,11 +43,20 @@ const Hero = () => {
           libraries and frameworks
         </p>
         <div className="mt-10">
-          <audio ref={audioRef} src="../public/audio.mp3" />
-          <AiFillPlayCircle
-            onClick={togglePlay}
-            className="cursor-pointer text-6xl"
-          />
+          <audio ref={audioRef} src="audio.mp3" />
+          {isPlaying ? (
+            <AiFillPauseCircle
+              onClick={togglePlay}
+              className={`cursor-pointer text-6xl ${
+                isPlaying ? "text-primary" : ""
+              }`}
+            />
+          ) : (
+            <AiFillPlayCircle
+              onClick={togglePlay}
+              className="cursor-pointer text-6xl"
+            />
+          )}
         </div>
       </div>
       <div className="sm:w-[40%]">
