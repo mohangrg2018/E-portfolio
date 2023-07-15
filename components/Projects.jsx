@@ -96,7 +96,7 @@ const Projects = () => {
           see some of my <span className="text-primary ml-2">projects</span>
         </h2>
       </div>
-      <div className="flex items-center justify-around font-rubik mt-12">
+      <div className="sm:flex sm:items-center sm:justify-around font-rubik mt-12">
         <h2
           onClick={() => handleSelectedCategory("All")}
           className={`cursor-pointer hover:text-primary ${
