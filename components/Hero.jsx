@@ -8,6 +8,7 @@ import { AiFillPauseCircle, AiFillPlayCircle } from "react-icons/ai";
 
 const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isEnded, setIsEnded] = useState(false);
   const audioRef = useRef(null);
 
   const togglePlay = () => {
@@ -20,6 +21,38 @@ const Hero = () => {
     }
 
     setIsPlaying(!isPlaying);
+  };
+
+  const handleAudioEnded = () => {
+    setIsEnded(true);
+    setIsPlaying(false);
+  };
+
+  const renderPlayIcon = () => {
+    if (isEnded && !isPlaying) {
+      return (
+        <AiFillPlayCircle
+          onClick={togglePlay}
+          className="cursor-pointer text-6xl"
+        />
+      );
+    } else if (isPlaying) {
+      return (
+        <AiFillPauseCircle
+          onClick={togglePlay}
+          className={`cursor-pointer text-6xl ${
+            isPlaying ? "text-primary" : ""
+          }`}
+        />
+      );
+    } else {
+      return (
+        <AiFillPlayCircle
+          onClick={togglePlay}
+          className="cursor-pointer text-6xl"
+        />
+      );
+    }
   };
 
   return (
@@ -43,20 +76,8 @@ const Hero = () => {
           libraries and frameworks
         </p>
         <div className="mt-10">
-          <audio ref={audioRef} src="audio.mp3" />
-          {isPlaying ? (
-            <AiFillPauseCircle
-              onClick={togglePlay}
-              className={`cursor-pointer text-6xl ${
-                isPlaying ? "text-primary" : ""
-              }`}
-            />
-          ) : (
-            <AiFillPlayCircle
-              onClick={togglePlay}
-              className="cursor-pointer text-6xl"
-            />
-          )}
+          <audio ref={audioRef} src="audio.mp3" onEnded={handleAudioEnded} />
+          {renderPlayIcon()}
         </div>
       </div>
       <div className="sm:w-[40%]">
