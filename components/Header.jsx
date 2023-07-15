@@ -70,7 +70,7 @@ const Header = () => {
         <div
           className={`${
             open
-              ? "flex flex-col absolute top-[80%] z-10 bg-gray-100"
+              ? "flex flex-col absolute top-[100px] z-10 bg-gray-100"
               : "hidden"
           } sm:inline-block sm:bg-transparent`}
         >
